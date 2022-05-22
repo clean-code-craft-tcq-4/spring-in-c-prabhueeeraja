@@ -9,3 +9,13 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
+
+float LargestElement(const float* arr, int n)
+{
+    for (int i = 1; i < n; ++i) {
+    if (arr[0] < arr[i]) {
+      arr[0] = arr[i];
+    }
+  }
+    return arr[0];
+}
