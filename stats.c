@@ -12,19 +12,22 @@ int ledAlertCallCount = 0;
 
 struct MaxMin
 {
-  int min;
-  int max;
+  float min;
+  float max;
+  float avg;
 }; 
  
-struct MaxMin getMinMax(int arr[], int n)
+struct MaxMin getMinMax(float arr[], int n)
 {
   struct MaxMin minmax;    
   int i;
+  float sum = 0;
   
   if (n == 1)
   {
      minmax.max = arr[0];
-     minmax.min = arr[0];    
+     minmax.min = arr[0];
+     minmax.max = arr[0];
      return minmax;
   }   
  
@@ -47,7 +50,13 @@ struct MaxMin getMinMax(int arr[], int n)
     else if (arr[i] <  minmax.min)     
       minmax.min = arr[i];
   }
-   
+  
+  for (i=0; i<n;i++)
+   {
+      sum=sum+arr[i];
+      minmax.avg=(float)sum/(i+1);
+   }
+  
   return minmax;
 }
 
