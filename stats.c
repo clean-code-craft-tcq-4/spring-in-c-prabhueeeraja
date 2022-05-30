@@ -32,16 +32,16 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
  
   for (i = 2; i<setlength; i++)
   {
-    if (arr[i] >  minmax.max)     
+    if (numberset[i] >  minmax.max)     
       minmax.max = numberset[i];
    
-    else if (arr[i] <  minmax.min)     
+    else if (numberset[i] <  minmax.min)     
       minmax.min = numberset[i];
   }
   
   for (i=0; i<setlength;i++)
    {
-      sum=sum+arr[i];
+      sum=sum+numberset[i];
       minmax.average=(float)sum/(i+1);
    }
   
