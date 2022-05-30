@@ -5,6 +5,10 @@ using namespace std;
 
 struct Stats compute_statistics(const float* numberset, int setlength);
 
+int emailAlerter();
+
+int ledAlerter()
+
 extern int emailAlertCallCount;
 extern int ledAlertCallCount;
 
