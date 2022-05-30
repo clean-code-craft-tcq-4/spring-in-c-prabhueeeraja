@@ -60,3 +60,7 @@ struct MaxMin getMinMax(float arr[], int n)
   return minmax;
 }
 
+int main(int argc, char *argv[])
+{
+    
+}
