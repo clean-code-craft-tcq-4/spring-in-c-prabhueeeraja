@@ -1,25 +1,10 @@
 #include "stats.h"
 
 struct Stats compute_statistics(const float* numberset, int setlength) {
-    struct Stats s;
-    s.average = 0;
-    s.min = 0;
-    s.max = 0;
-}
-
-int emailAlertCallCount = 0;
-int ledAlertCallCount = 0;
-
-struct MaxMin
-{
-  float min;
-  float max;
-  float avg;
-}; 
- 
-struct MaxMin getMinMax(float arr[], int n)
-{
-  struct MaxMin minmax;    
+    struct Stats minmax;
+    minmax.average = 0;
+    minmax.min = 0;
+    minmax.max = 0;
   int i;
   float sum = 0;
   
@@ -60,7 +45,3 @@ struct MaxMin getMinMax(float arr[], int n)
   return minmax;
 }
 
-int main(int argc, char *argv[])
-{
-    
-}
