@@ -2,11 +2,11 @@
 
 int emailAlerter()
 {
-  return int;
+  return 5;
 }
 
 int ledAlerter()
 {
-  return int;
+  return 5;
 }
 
