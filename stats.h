@@ -2,6 +2,11 @@
 #include<iostream>
 #include<numeric>
 #include <math.h>
+
+#ifdef NAN
+/* NAN is supported */
+#endif
+
 using namespace std;
 
 struct Stats compute_statistics(const float* numberset, int setlength);
