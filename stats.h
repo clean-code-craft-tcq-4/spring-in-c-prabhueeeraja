@@ -14,7 +14,9 @@ struct Stats compute_statistics(const float* numberset, int setlength);
 extern int emailAlertCallCount;
 extern int ledAlertCallCount;
 
-typedef void (*alerter_funcptr)();
+typedef void (*alerter_funcptr)() = {emailAlerter, ledAlerter};
+
+//void (*fun_ptr_arr[])(int, int) = {add, subtract, multiply};
 
 //alerter_funcptr emailAlerter;
 //alerter_funcptr ledAlerter;
