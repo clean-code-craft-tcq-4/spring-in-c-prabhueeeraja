@@ -1,6 +1,7 @@
 
 #include<iostream>
 #include<numeric>
+#include <math.h>
 using namespace std;
 
 struct Stats compute_statistics(const float* numberset, int setlength);
