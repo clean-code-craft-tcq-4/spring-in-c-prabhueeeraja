@@ -3,6 +3,8 @@
 #include "catch.hpp"
 #include "stats.h"
 
+#include "Alerter.h"
+
 #include <stdlib.h>
 #include <math.h>
 
