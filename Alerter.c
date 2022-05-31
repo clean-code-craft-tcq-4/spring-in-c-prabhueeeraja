@@ -14,5 +14,4 @@ int fnledAlerter()
   return 5;
 }
 
-int (*emailAlerter) () = fnemailAlerter;
-int (*ledAlerter) () = fnledAlerter;
+
