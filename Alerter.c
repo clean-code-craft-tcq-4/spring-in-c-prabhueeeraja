@@ -1,17 +1,15 @@
 #include "stats.h"
 
-alerter_funcptr alter;
+int (*emailAlerter) () = fnemailAlerter;
 
-alter = emailAlerter;
-
-int emailAlerter()
+int fnemailAlerter()
 {
   return 5;
 }
 
-alter = ledAlerter;
+int (*ledAlerter) () = fnledAlerter;
 
-int ledAlerter()
+int fnledAlerter()
 {
   return 5;
 }
