@@ -14,4 +14,5 @@ void fnledAlerter()
   //return 5;
 }
 
-
+void (*emailAlerter)() = &fnemailAlerter;
+void (*ledAlerter)() = &fnledAlerter;
