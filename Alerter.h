@@ -1,2 +1,2 @@
-int (*emailAlerter) () = fnemailAlerter;
-int (*ledAlerter) () = fnledAlerter;
+void (*emailAlerter) () = fnemailAlerter;
+void (*ledAlerter) () = fnledAlerter;
