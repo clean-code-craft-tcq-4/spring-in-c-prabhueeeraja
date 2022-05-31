@@ -4,20 +4,20 @@
 
 void fnemailAlerter()
 {
-  //return 5;
+  emailAlertCallCount++;
 }
 
 
 
 void fnledAlerter()
 {
-  //return 5;
+  ledAlertCallCount++;
 }
 
 void (*emailAlerter)() = &fnemailAlerter;
 void (*ledAlerter)() = &fnledAlerter;
 
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats){
-  emailAlertCallCount = 1;
-  ledAlertCallCount = 1;
+  alerters[0]();
+  alerters[1]();
 }
