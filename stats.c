@@ -11,6 +11,13 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
   int i;
   float sum = 0;
   
+  if(setlength == 0)
+  {
+    minmax.average = NAN;
+    minmax.min = NAN;
+    minmax.max = NAN;
+  }
+    
   if (setlength == 1)
   {
      minmax.max = numberset[0];
