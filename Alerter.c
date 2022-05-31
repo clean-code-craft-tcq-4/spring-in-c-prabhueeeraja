@@ -2,16 +2,16 @@
 
 
 
-int fnemailAlerter()
+void fnemailAlerter()
 {
-  return 5;
+  //return 5;
 }
 
 
 
-int fnledAlerter()
+void fnledAlerter()
 {
-  return 5;
+  //return 5;
 }
 
 
