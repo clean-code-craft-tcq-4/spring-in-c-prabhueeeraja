@@ -16,3 +16,8 @@ void fnledAlerter()
 
 void (*emailAlerter)() = &fnemailAlerter;
 void (*ledAlerter)() = &fnledAlerter;
+
+void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats){
+  emailAlertCallCount = 1;
+  ledAlertCallCount = 1;
+}
